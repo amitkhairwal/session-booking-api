@@ -2,6 +2,8 @@
 
 REST API where users book sessions with teachers. Node.js, TypeScript, Express 5, MongoDB, Mongoose.
 
+**Live:** https://session-booking-api.onrender.com (free tier, so the first request after idle can take about a minute)
+
 ## Setup
 
 You need Node 18+ and a running MongoDB.
