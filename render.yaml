@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: session-booking-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: MONGODB_URI
+        sync: false # paste your Atlas URI in the Render dashboard
+      - key: NODE_VERSION
+        value: 22
